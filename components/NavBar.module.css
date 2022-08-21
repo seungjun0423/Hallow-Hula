@@ -1,0 +1,5 @@
+.nav {
+	display: grid;
+  background-color:skyblue ;
+  grid-template-columns: repeat(6, 1fr);
+}
