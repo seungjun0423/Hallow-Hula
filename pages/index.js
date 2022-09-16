@@ -1,6 +1,18 @@
-import NavBar from "../components/NavBar";
-import Head from "next/head";
+import Slider from '../src/components/Slider';
 
 export default function Home() {
-  return <div>Home</div>;
+  return (
+    <div>
+      <Slider></Slider>
+      <div className="main">
+        Home
+      </div>
+      <style jsx>{`
+        .main {
+          height:30em;
+        }
+      `}
+      </style>
+    </div>
+  );
 }

@@ -1,14 +1,18 @@
-import NavBar from "../components/NavBar";
-import Head from "next/head";
+import 'semantic-ui-css/semantic.min.css';
+
+import Layout from '../src/components/Layout';
+import Seo from '../src/components/Seo';
+import Footer from '../src/components/Footer';
+
 
 export default function MyApp({ Component, pageProps }) {
   return (
     <div>
-      <Head>
-        <title>HACEA</title>
-      </Head>
-      <NavBar />
-      <Component {...pageProps} />
+      <Layout>
+        <Seo></Seo>
+        <Component {...pageProps} />
+        <Footer></Footer>
+      </Layout>
     </div>
   );
 }

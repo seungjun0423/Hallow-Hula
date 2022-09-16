@@ -1,11 +1,11 @@
 import Slider from '../src/components/Slider';
 
-export default function About () {
+export default function Community () {
   return (
     <div>
       <Slider></Slider>
       <div className="main">
-        About
+        Community
       </div>
       <style jsx>{`
         .main {
