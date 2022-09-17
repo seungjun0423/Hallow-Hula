@@ -1,5 +1,5 @@
 import React from 'react'
-import { List } from 'semantic-ui-react'
+import { List,Button,Icon } from 'semantic-ui-react'
 
 export default function Footer() {
   return (
@@ -27,10 +27,23 @@ export default function Footer() {
       </List.Item>
     </List>
       <div className="logo">
-        <img className="sns" src='/youtube.png' width='2%' onClick={()=>window.location.assign('https://www.youtube.com/channel/UCPT-3XyzGJGFJDCygY39DmQ')}>
-        </img>
-        <img className="sns" src='/instar.png' width='2%' onClick={()=>window.location.assign('https://www.instagram.com/hacea_official/')}>
-        </img>
+        <div className="sns">
+            <Button color='facebook'>
+              <Icon name='facebook' /> Facebook
+            </Button>
+            <Button color='twitter'>
+              <Icon name='twitter' /> Twitter
+            </Button>
+            <Button color='linkedin'>
+              <Icon name='linkedin' /> LinkedIn
+            </Button>
+            <Button color='instagram' onClick={()=>window.location.assign('https://www.instagram.com/hacea_official/')}>
+              <Icon name='instagram' /> Instagram
+            </Button>
+            <Button color='youtube' onClick={()=>window.location.assign('https://www.youtube.com/channel/UCPT-3XyzGJGFJDCygY39DmQ')}>
+              <Icon name='youtube' /> YouTube
+            </Button>
+        </div>
       </div>
       <style jsx>{`
         .bottom{
@@ -40,15 +53,14 @@ export default function Footer() {
           display: flex;
           justify-content: space-around;
           align-items: center;
-          font-weight: 600;
+          font-weight: 400;
           font-size: 1.1em;
           letter-spacing: 2px;
           background-color: rgb(240, 240, 240);
         }
         .sns{
-          width:  2em;
-          height: 2em;
-          cursor: pointer;
+          display: flex;
+          flex-direction:row;
         }
         .logo {
             display: flex;

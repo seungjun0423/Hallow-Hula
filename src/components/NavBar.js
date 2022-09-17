@@ -53,7 +53,7 @@ export default function NavBar() {
             display: flex;
             flex-direction:row;
             width:20%;
-            font-size: 155%;
+            font-size: 125%;
             justify-content: space-evenly;
           }
           .menuFontColor {
